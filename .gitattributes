@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+C:/Users/frank/OneDrive/Desktop/stuff/uber_data_project/cleaned_uber_data.csv filter=lfs diff=lfs merge=lfs -text
