@@ -110,7 +110,7 @@ def transform(df, *args, **kwargs):
     "RatecodeID":RatecodeID.to_dict(orient="dict"),
     "Location_info_T":Location_Info_T.to_dict(orient="dict"),
     "Payment_type":Payment_type.to_dict(orient="dict"),
-    "Main":Main_Table.to_dict(orient="dict")}
+    "Main_Table":Main_Table.to_dict(orient="dict")}
 
 
 @test
