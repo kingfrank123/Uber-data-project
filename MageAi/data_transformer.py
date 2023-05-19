@@ -104,7 +104,13 @@ def transform(df, *args, **kwargs):
                'improvement_surcharge', 'total_amount','congestion_surcharge','Airport_fee']]
 
 
-    return Main_Table
+    return {"Datetime":Datetime.to_dict(orient="dict"),
+    "Passenger_count":Passenger_count.to_dict(orient="dict"),
+    "trip_distance":trip_distance.to_dict(orient="dict"),
+    "RatecodeID":RatecodeID.to_dict(orient="dict"),
+    "Location_info_T":Location_Info_T.to_dict(orient="dict"),
+    "Payment_type":Payment_type.to_dict(orient="dict"),
+    "Main":Main_Table.to_dict(orient="dict")}
 
 
 @test
